@@ -1,3 +1,5 @@
+using FrogpayAPI.Models;
+
 namespace FrogPayAPI.Models
 {
     public class Pessoa
