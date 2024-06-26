@@ -20,26 +20,39 @@ A solução deverá basear-se no seguinte diagrama de banco de dados:
 # Controllers/
 
 PessoaController.cs: Controlador que gerencia as operações CRUD para a entidade Pessoa.
+
 DadosBancariosController.cs: Controlador que gerencia as operações CRUD para a entidade DadosBancarios.
+
 EnderecoController.cs: Controlador que gerencia as operações CRUD para a entidade Endereco.
+
 LojaController.cs: Controlador que gerencia as operações CRUD para a entidade Loja.
 
 # Data/
+
 FrogPayContext.cs: Contexto do Entity Framework que configura as entidades e suas relações com o banco de dados.
 
 # Models/
+
 Pessoa.cs: Modelo que representa a entidade Pessoa.
+
 DadosBancarios.cs: Modelo que representa a entidade DadosBancarios.
+
 Endereco.cs: Modelo que representa a entidade Endereco.
+
 Loja.cs: Modelo que representa a entidade Loja.
 
 # Properties/
+
 launchSettings.json: Arquivo de configuração para perfis de lançamento durante o desenvolvimento.
 
 # Raiz do Projeto
+
 FrogPayAPI.csproj: Arquivo de configuração do projeto, definindo dependências e configurações do build.
+
 Program.cs: Ponto de entrada da aplicação, onde a aplicação web é configurada e inicializada.
+
 appsettings.json: Arquivo de configuração para definições de ambiente como strings de conexão e outras configurações gerais.
+
 appsettings.Development.json: Configuração específica para o ambiente de desenvolvimento.
 
 ## Tecnologias
@@ -152,3 +165,12 @@ http DELETE
 ## Testes
 
 Para rodar os testes, execute: `dotnet test`
+
+
+## Feedbacks pessoais
+
+No projeto mencionado, busquei executá-lo da melhor maneira possível, mesmo enfrentando desafios na linguagem C#. Embora não seja meu ponto forte no momento, decidi seguir em frente. Encontrei certa dificuldade ao criar os Controllers, não pela lógica em si, mas devido à minha familiaridade com essa abordagem. Meu aprendizado em C# começou ano passado e venho progredindo constantemente. É possível que existam pequenos erros no código, fruto do meu nível de conhecimento atual, pois concluí meu curso no ano passado. Deixo vocês à vontade para explorar meu perfil no GitHub e LinkedIn, onde destaco minha experiência com API SpringBoot e React Native para desenvolvimento mobile. Além disso, tenho familiaridade com a plataforma Microsoft Azure, onde trabalho com Épicos, Features e Backlogs de Produto. Estou à disposição para esclarecer quaisquer dúvidas que possam surgir. Agradeço a atenção.
+
+Atenciosamente.
+
+❤️
