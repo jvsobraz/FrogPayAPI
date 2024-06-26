@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using FrogPayAPI.Models;
 using FrogpayAPI.Models;
 
+namespace FrogPayAPI.Data
+{
 public class FrogPayContext : DbContext
 {
     public FrogPayContext(DbContextOptions<FrogPayContext> options) : base(options) { }
@@ -11,5 +13,5 @@ public class FrogPayContext : DbContext
     public DbSet<Endereco> Enderecos { get; set; }
     public DbSet<Loja> Lojas { get; set; }
 
-
+}
 }
