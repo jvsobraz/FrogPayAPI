@@ -94,6 +94,23 @@ namespace FrogPayAPI.Controllers
         {
             return _context.Pessoas.Any(e => e.IdPessoa == id);
         }
+
+         [HttpGet("{id}/dados-bancarios-endereco")]
+        public async Task<ActionResult<Pessoa>> GetDadosBancariosEndereco(int id)
+        {
+            var pessoa = await _context.Pessoas
+                .Include(p => p.DadosBancarios)
+                .Include(p => p.Enderecos)
+                .FirstOrDefaultAsync(p => p.IdPessoa == id);
+
+            if (pessoa == null)
+            {
+                return NotFound();
+            }
+
+            return pessoa;
+        }
+
     }
-}
+    }
 
