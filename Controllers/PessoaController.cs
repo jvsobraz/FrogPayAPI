@@ -33,6 +33,16 @@ namespace FrogPayAPI.Controllers
             return pessoa;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Pessoa>>> GetPessoas(int pageNumber = 1, int pageSize = 10)
+        {
+            return await _context.Pessoas
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+        }
+
+
         [HttpPost]
         public async Task<ActionResult<Pessoa>> PostPessoa(Pessoa pessoa)
         {
@@ -86,3 +96,4 @@ namespace FrogPayAPI.Controllers
         }
     }
 }
+
