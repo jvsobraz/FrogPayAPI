@@ -1,0 +1,6 @@
+@FrogPayAPI_HostAddress = http://localhost:5204
+
+GET {{FrogPayAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
