@@ -161,6 +161,11 @@ http DELETE
 2. Navegue para a pasta do projeto: `cd FrogPayAPI`
 3. Execute a aplicação: `dotnet run`
 4. Acesse a API em `https://localhost:5001/api/pessoas`
+5. Para deploy, você pode publicar a aplicação em um servidor web ou usar serviços como Azure, AWS ou Heroku. Aqui está um exemplo de deploy no Azure:
+
+dotnet publish -c Release
+az webapp up --name FrogPayAPI --resource-group FrogPayResourceGroup --plan FrogPayServicePlan
+
 
 ## Testes
 
