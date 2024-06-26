@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FrogPayAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+695d2a9a6ab24e14f0a97662d70ac630bdc11dd6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FrogPayAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FrogPayAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
