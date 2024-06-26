@@ -109,6 +109,17 @@ namespace FrogPayAPI.Controllers
             }
 
             return pessoa;
+
+        [HttpGet("paginated")]
+        public async Task<ActionResult<IEnumerable<Pessoa>>> GetPessoasPaginated([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {       
+            var pessoas = await _context.Pessoas
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return pessoas;
+}
         }
 
     }
