@@ -82,4 +82,21 @@ public class EnderecoController : ControllerBase
     {
         return _context.Enderecos.Any(e => e.IdEndereco == id);
     }
+
+    [HttpGet("buscar/{nome}")]
+    public async Task<ActionResult<IEnumerable<Endereco>>> GetEnderecoPorNome(string nome)
+    {
+        var enderecos = await _context.Enderecos
+            .Include(e => e.Pessoa)
+            .Where(e => e.Pessoa.Nome.Contains(nome))
+            .ToListAsync();
+
+        if (!enderecos.Any())
+        {
+            return NotFound();
+        }
+
+            return enderecos;
+    }
+
 }
