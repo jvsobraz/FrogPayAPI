@@ -8,7 +8,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Program.cs
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
